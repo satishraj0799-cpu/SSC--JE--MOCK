@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SSC JE Result</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>Test Result</h2>
+    <p id="score"></p>
+    <div id="explanations"></div>
+    <button onclick="location.href='dashboard.html'">Back to Dashboard</button>
+  </div>
+
+  <script>
+    let questions = JSON.parse(localStorage.getItem("questions"));
+    let answers = JSON.parse(localStorage.getItem("answers"));
+    let score = localStorage.getItem("score");
+    document.getElementById("score").innerText = `Your Score: ${score}`;
+
+    let expDiv = document.getElementById("explanations");
+    questions.forEach((q,i)=>{
+      expDiv.innerHTML += `
+        <p><b>Q${i+1}. ${q.question}</b><br>
+        Your Answer: ${answers[i]==-1?"Not Attempted":q.options[answers[i]]}<br>
+        Correct Answer: ${q.options[q.correct]}<br>
+        Explanation: ${q.explanation}</p><hr>
+      `;
+    });
+  </script>
+</body>
+</html>
