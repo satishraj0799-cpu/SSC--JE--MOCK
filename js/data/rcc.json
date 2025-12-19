@@ -1,6 +1,0 @@
-[
-  {"year":"2008","question":"Nominal mix for M20 concrete?","options":["1:1:2","1:1.5:3","1:2:4","1:3:6"],"correct":1,"explanation":"M20 nominal mix is 1:1.5:3."},
-  {"year":"2009","question":"Which is coarse aggregate in RCC?","options":["Sand","Gravel","Cement","Water"],"correct":1,"explanation":"Gravel is used as coarse aggregate."},
-  {"year":"2010","question":"Minimum cement content for M20?","options":["280 kg/m3","300 kg/m3","320 kg/m3","350 kg/m3"],"correct":0,"explanation":"Minimum cement content is 280 kg/m3."},
-  {"year":"2011","question":"Slump range for M20 concrete?","options":["25–50 mm","50–75 mm","75–100 mm","100–125 mm"],"correct":1,"explanation":"Slump for M20 is 50–75 mm."}
-]

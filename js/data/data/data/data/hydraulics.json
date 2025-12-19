@@ -1,4 +1,0 @@
-[
-  {"year":"2008","question":"Manning's equation is used for?","options":["Pipe flow","Open channel flow","Pressure pipe","Pumping"],"correct":1,"explanation":"Manning's equation calculates open channel flow."},
-  {"year":"2009","question":"Unit of discharge is?","options":["m","m2","m3/s","m/s"],"correct":2,"explanation":"Discharge unit is cubic meters per second."}
-]
