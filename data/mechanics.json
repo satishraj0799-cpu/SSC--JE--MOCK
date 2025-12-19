@@ -1,0 +1,4 @@
+[
+  {"year":"2008","question":"Unit of stress is?","options":["Pa","N","J","W"],"correct":0,"explanation":"Stress is measured in Pascal (Pa)."},
+  {"year":"2009","question":"Hooke's law is valid for?","options":["Elastic limit","Plastic range","Yield point","All of these"],"correct":0,"explanation":"Hooke's law is valid within elastic limit."}
+]
