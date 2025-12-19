@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SSC JE Civil Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="card">
+    <h2>SSC JE Civil – Mock Test</h2>
+
+    <label>Subject:</label><br>
+    <select id="subject">
+      <option value="rcc">RCC / Concrete</option>
+      <option value="steel">Steel / Structural</option>
+      <option value="soil">Soil Mechanics / Foundation</option>
+      <option value="surveying">Surveying</option>
+      <option value="hydraulics">Hydraulics / Fluid Mechanics</option>
+      <option value="env">Environmental / Water Supply & Sanitation</option>
+      <option value="transportation">Transportation / Highway</option>
+      <option value="mechanics">Engineering Mechanics</option>
+    </select><br><br>
+
+    <label>Year:</label><br>
+    <select id="year">
+      <option value="2008">2008</option>
+      <option value="2009">2009</option>
+      <option value="2010">2010</option>
+      <option value="2011">2011</option>
+      <option value="2012">2012</option>
+      <option value="2013">2013</option>
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      <option value="2016">2016</option>
+      <option value="2017">2017</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2023">2023</option>
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select><br><br>
+
+    <button onclick="startTest()">Start Subject-wise Test</button>
+    <button onclick="startFullMock()">Start Full Mock Test (All Subjects)</button><br><br>
+    <button onclick="googleAssist()">🔍 Find More PYQs on Google</button>
+  </div>
+
+<script>
+function startTest(){
+  localStorage.setItem("mode","filter");
+  localStorage.setItem("subject", subject.value);
+  localStorage.setItem("year", year.value);
+  window.location.href = "test.html";
+}
+
+function startFullMock(){
+  localStorage.setItem("mode","full");
+  window.location.href = "test.html";
+}
+
+function googleAssist(){
+  let s = subject.value.toUpperCase();
+  let y = year.value;
+  let query = `SSC JE Civil ${s} Previous Year Questions ${y} PDF`;
+  window.open("https://www.google.com/search?q=" + encodeURIComponent(query));
+}
+</script>
+</body>
+</html>
