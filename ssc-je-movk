@@ -1,0 +1,18 @@
+ssc-je-mock/
+├── index.html
+├── dashboard.html
+├── test.html
+├── result.html
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+└── data/
+    ├── rcc.json
+    ├── steel.json
+    ├── soil.json
+    ├── surveying.json
+    ├── hydraulics.json
+    ├── env.json
+    ├── transportation.json
+    └── mechanics.json
